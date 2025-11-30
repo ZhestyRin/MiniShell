@@ -35,7 +35,7 @@ void handle_redirection(char **args) {
                 dup2(fd, STDOUT_FILENO);
                 close(fd);
                 args[i] = NULL;
-                args[i+1] = NULL; // Nullify the filename as well
+                args[i+1] = NULL; 
             } else {
                 fprintf(stderr, "Shell error: no output file specified for >\n");
                 exit(EXIT_FAILURE);
