@@ -82,7 +82,7 @@ int main() {
     char *args[MAX_ARGS];
 
     while (1) {
-        printf("RinShell>> ");
+        printf("Shellulose>> ");
 
         if(fgets(input, sizeof(input), stdin) == 0) {
             printf("\nExiting shell\n");
